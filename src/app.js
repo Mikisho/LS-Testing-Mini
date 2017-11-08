@@ -40,8 +40,10 @@ const Karthik = {
   favActivity: 'Rock Climbing',
 };
 
-const addNums = (x, y) => {
-  return x + y;
+const addNums = (x = 0, y = 0) => {
+  
+
+  return Number(x) + Number(y);
 };
 
 const callBackInvoker = (cb) => {
