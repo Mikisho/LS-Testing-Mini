@@ -44,6 +44,11 @@ describe('Cases from app.js', () => { // this is a testing suite made up of suit
       expect(Sean).to.be.an('object');
     });
     // write a test to check if Seans's favorite food is 'Pizza'.
+    it('his favorite food should be "Pizza"', () => {
+      const Sean = cases.Sean;
+      const favoriteFood = Sean.favFood;
+      expect(favoriteFood).to.equal('Pizza');
+    })
   });
 
   describe('Ryan', () => {
@@ -52,6 +57,11 @@ describe('Cases from app.js', () => { // this is a testing suite made up of suit
       expect(Ryan).to.be.an('object');
     });
     // write a test to see if Ryan's favBook is `not` 'Harry Potter'.
+    it('his favotiter book should not be "Harry Potter"', () => {
+      const Ryan = cases.Ryan;
+      const favoriteBook = Ryan.favBook;
+      expect(Ryan).to.not.equal('Harry Potter');
+    })
   });
 
   describe('Austen', () => {
@@ -60,14 +70,25 @@ describe('Cases from app.js', () => { // this is a testing suite made up of suit
       expect(Austen).to.be.an('object');
     });
     // write a test to see if Austen's favColor is not 'Gold'.
+    it('his favotiter book should not be "Gold"', () => {
+      const Austen = cases.Austen;
+      const favoriteColor = Austen.favColor;
+      expect(favoriteColor).to.not.equal('Gold');
+    })
   });
 
   describe('Karthik', () => {
     it('should be an object', () => {
       const Karthik = cases.Karthik;
       expect(Karthik).to.be.an('object');
-    });
+    })
     // write a test to check if Karthik's favActivity is 'Rock Climbing'.
+    it('his favotite activity should  be "Rock Climbing"', () => {
+      const Karthik = cases.Karthik;
+      const favoriteActivity = Karthik.favActivity;
+      expect(favoriteActivity).to.equal('Rock Climbing');
+    })
+
   });
 
   describe('addNums', () => {
